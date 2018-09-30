@@ -10,7 +10,7 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn import tree
 #from sklearn import cross_validation
 def preprocessing():
-	bank=pd.read_csv("/home/soha/Documents/DataMining/bank.csv")
+	bank=pd.read_csv("/home/krutee/Data_mining/bank.csv")
 	bank_df = pd.DataFrame(bank)
 	bank.head()
 
@@ -120,14 +120,16 @@ def logisticreg(X_train,X_test,y_train,y_test):
 	from sklearn import metrics as mt
 	acc = mt.accuracy_score(y_test,y_pred)
 	conf = mt.confusion_matrix(y_test,y_pred)
-	print ('accuracy:', acc) 
+	print ('accuracy:', acc)
 	print ("Confusion matrix : ")
 	print (conf)
-	print
+
 	print ("Classification Report..")
 	from sklearn.metrics import classification_report
 	print(classification_report(y_test, y_pred))
 	return classifier
+
+
 #y_pred1=classifier.predict()
 #return y_pred1
 #import ipywidgets as widgets

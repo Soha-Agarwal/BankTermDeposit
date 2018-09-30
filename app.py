@@ -521,9 +521,14 @@ def predict():
 		x=X_train_scaled
 		X_train,X_test,y_train,y_test=preprocessing()
 
-		value=logisticreg(X_train,X_test,y_train,y_test).predict(x)
+		value = logisticreg(X_train,X_test,y_train,y_test).predict(x)
 		print(value)
-	return render_template('index.html')
+		value1 = int(value[0])
+		if(value1==1):
+	#return render_template('index.html')
+			return render_template('yes.html')
+		else:
+			return render_template('no.html')
 	#return value
 
 if __name__=='__main__' :
