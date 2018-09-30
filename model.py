@@ -107,7 +107,7 @@ def preprocessing():
 
 #Classification
 #1.Logistic Regression
-def logisticreg(X_train_scaled,X_test_scaled,y_train,y_test):
+def logisticreg(X_train,X_test,y_train,y_test):
 	from sklearn.linear_model import LogisticRegression
 	classifier=LogisticRegression(penalty='l2', C=0.05, class_weight="balanced")
 	classifier.fit(X_train,y_train)

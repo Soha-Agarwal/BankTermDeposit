@@ -2,7 +2,7 @@ from flask import Flask,render_template,request,flash,json
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 from model import preprocessing
-
+from model import logisticreg
 app=Flask(__name__)
 
 
@@ -519,10 +519,12 @@ def predict():
 		X_train_scaled=np.array(X_train_scaled)
 		#X_train_scaled.reshape(1,-1).astype('float32')
 		x=X_train_scaled
-		value=preprocessing().predict(x)
-		print(Value)
-	#return render_template('index.html')
-	return Value
+		X_train,X_test,y_train,y_test=preprocessing()
+
+		value=logisticreg(X_train,X_test,y_train,y_test).predict(x)
+		print(value)
+	return render_template('index.html')
+	#return value
 
 if __name__=='__main__' :
 	app.secret_key = 'super secret key'
