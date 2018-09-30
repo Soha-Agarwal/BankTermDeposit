@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V5</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="../static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="post" action="/predict">
+				<span class="contact100-form-title">
+					Bank Term Deposit Prediction
+				</span>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+					<span class="label-input100">NAME *</span>
+					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Your Email (e@a.x)">
+					<span class="label-input100">Age *</span>
+					<input class="input100" type="text" name="age" placeholder="Enter Your Age">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Campaign</span>
+					<input class="input100" type="text" name="campaign" placeholder="Enter Campaign">
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Job *</span>
+					<div>
+						<select class="js-select2" name="job">
+							<option>Please chooses</option>
+							<option>blue-collar</option>
+							<option>admin</option>
+							<option>services</option>
+							<option>housemaid</option>
+							<option>technician</option>
+							<option>services</option>
+							<option>self-employed</option>
+							<option>retired</option>
+							<option>management</option>
+							<option>unemployed</option>
+							<option>student</option>
+							<option>unknown</option>
+							<option>entreprenuer</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="w-full dis-none js-show-service">
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Marital Status</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="radio1" type="radio" name="marital" value="married" checked="checked">
+							<label class="label-radio100" for="radio1">
+								Married
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio2" type="radio" name="marital" value="single">
+							<label class="label-radio100" for="radio2">
+								Single
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio3" type="radio" name="marital" value="divorced">
+							<label class="label-radio100" for="radio3">
+								Divorced
+							</label>
+						</div>
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio4" type="radio" name="marital" value="unknown">
+							<label class="label-radio100" for="radio4">
+								Unknown
+							</label>
+						</div>
+					
+					</div>
+
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Education</span>
+							<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio6" type="radio" name="education" value="basic.4y">
+							<label class="label-radio100" for="radio6">
+								Basic.4y
+							</label>
+							</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio7" type="radio" name="education" value="basic.6y">
+							<label class="label-radio100" for="radio7">
+								Basic.6y
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio8" type="radio" name="education" value="basic.9y">
+							<label class="label-radio100" for="radio8">
+								Basic.9y
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio9" type="radio" name="education" value="high_school">
+							<label class="label-radio100" for="radio9">
+								High.school
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio10" type="radio" name="education" value="illiterate">
+							<label class="label-radio100" for="radio10">
+								Illiterate
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio11" type="radio" name="education" value="professional_course">
+							<label class="label-radio100" for="radio11">
+								Professional.course
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio12" type="radio" name="education" value="university_degree">
+							<label class="label-radio100" for="radio12">
+								University.degree
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio13" type="radio" name="education" value="unknown">
+							<label class="label-radio100" for="radio13">
+								Unknown
+							</label>
+						</div>
+
+					</div>
+					
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Default</span>
+
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio14" type="radio" name="default" value="yes">
+							<label class="label-radio100" for="radio14">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio15" type="radio" name="default" value="no">
+							<label class="label-radio100" for="radio15">
+							No
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio16" type="radio" name="default" value="unknown">
+							<label class="label-radio100" for="radio16">
+								Unknown
+							</label>
+						</div>
+
+						</div>
+						<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Housing</span>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio17" type="radio" name="housing" value="yes">
+							<label class="label-radio100" for="radio17">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio18" type="radio" name="housing" value="no">
+							<label class="label-radio100" for="radio18">
+								No
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio19" type="radio" name="housing" value="unknown">
+							<label class="label-radio100" for="radio19">
+								Unknown
+							</label>
+						</div>
+
+						</div>
+
+						<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Personal Loan</span>
+							<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio20" type="radio" name="loan" value="yes">
+							<label class="label-radio100" for="radio20">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio21" type="radio" name="loan" value="no">
+							<label class="label-radio100" for="radio21">
+								No
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio22" type="radio" name="loan" value="unknown">
+							<label class="label-radio100" for="radio22">
+								Unknown
+							</label>
+						</div>
+						</div>
+					
+						<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Contact</span>
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio23" type="radio" name="contact" value="cellular">
+							<label class="label-radio100" for="radio23">
+								Cellular
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio24" type="radio" name="contact" value="telephone">
+							<label class="label-radio100" for="radio24">
+								Telephone
+							</label>
+						</div>
+
+						</div>
+
+				<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Month</span>
+						
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio27" type="radio" name="month" value="mar">
+							<label class="label-radio100" for="radio27">
+								March
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio28" type="radio" name="month" value="apr">
+							<label class="label-radio100" for="radio28">
+								April
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio29" type="radio" name="month" value="may">
+							<label class="label-radio100" for="radio29">
+								May
+							</label>
+						</div>
+
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio29" type="radio" name="month" value="jun">
+							<label class="label-radio100" for="radio29">
+								June
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio30" type="radio" name="month" value="jul">
+							<label class="label-radio100" for="radio30">
+								July
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio31" type="radio" name="month" value="aug">
+							<label class="label-radio100" for="radio31">
+								August
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio32" type="radio" name="month" value="sep">
+							<label class="label-radio100" for="radio32">
+								September
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio33" type="radio" name="month" value="oct">
+							<label class="label-radio100" for="radio33">
+								October
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio34" type="radio" name="month" value="nov">
+							<label class="label-radio100" for="radio34">
+								November
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio35" type="radio" name="month" value="dec">
+							<label class="label-radio100" for="radio35">
+								December
+							</label>
+						</div>
+
+						</div>
+
+						<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Day of the week</span>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio36" type="radio" name="day_of_week" value="mon">
+							<label class="label-radio100" for="radio36">
+								Monday
+							</label>
+						</div>
+
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio37" type="radio" name="day_of_week" value="tue">
+							<label class="label-radio100" for="radio37">
+								Tuesday
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio38" type="radio" name="day_of_week" value="wed">
+							<label class="label-radio100" for="radio38">
+								Wednesday
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio39" type="radio" name="day_of_week" value="thu">
+							<label class="label-radio100" for="radio39">
+								Thursday
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio40" type="radio" name="day_of_week" value="fri">
+							<label class="label-radio100" for="radio40">
+								Friday
+							</label>
+						</div>
+
+						</div>
+
+						<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Duration</span>
+					<input class="input100" type="text" name="duration" placeholder="Enter Last Contact Duration">
+				</div>
+
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Pdays</span>
+					<input class="input100" type="text" name="pdays" placeholder="Enter days ">
+				</div>
+
+				<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Outcome of previous marketing campaign</span>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio41" type="radio" name="poutcome" value="success">
+							<label class="label-radio100" for="radio41">
+								Success
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio42" type="radio" name="poutcome" value="failure">
+							<label class="label-radio100" for="radio42">
+								Failure
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio43" type="radio" name="poutcome" value="nonexistent">
+							<label class="label-radio100" for="radio43">
+								Nonexistent
+							</label>
+						</div>
+
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Enter no of Employees</span>
+					<input class="input100" type="text" name="employed" placeholder="Enter no of employees">
+				</div>
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Enter no of Previous Contacts</span>
+					<input class="input100" type="text" name="previous" placeholder="Enter no of previous contacts">
+				</div>
+				
+			</div>
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+			</div>
+
+			<!--<input type="submit" value="Submit">-->
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="../static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/bootstrap/js/popper.js"></script>
+	<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../static/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/noui/nouislider.min.js"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 1500, 3900 ],
+	        connect: true,
+	        range: {
+	            'min': 1500,
+	            'max': 7500
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>

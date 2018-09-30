@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V5</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="../static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="post" action="/predictq">
+				<span class="contact100-form-title">
+					Bank Term Deposit Prediction
+				</span>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+					<span class="label-input100">NAME *</span>
+					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+				</div>
+				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+					<span class="label-input100">Age *</span>
+					<input class="input100" type="text" name="age" placeholder="Enter Your Age">
+				</div>
+				
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Job *</span>
+					<div>
+						<select class="js-select2" name="job">
+							<option>Please chooses</option>
+							<option>blue-collar</option>
+							<option>admin</option>
+							<option>services</option>
+							<option>housemaid</option>
+							<option>technician</option>
+							<option>services</option>
+							<option>self-employed</option>
+							<option>retired</option>
+							<option>management</option>
+							<option>unemployed</option>
+							<option>student</option>
+							<option>unknown</option>
+							<option>entreprenuer</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+				
+
+				<div class="w-full dis-none js-show-service">
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Marital Status</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="myes" type="radio" name="marital" value="married" >
+							<label class="label-radio100">
+								Married
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="mno" type="radio" name="marital" value="divorced">
+							<label class="label-radio100" >
+								Divorced
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="msin" type="radio" name="marital" value="single">
+							<label class="label-radio100" for="radio3">
+							Single
+							</label>
+						</div>
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="mun" type="radio" name="marital" value=1>
+							<label class="label-radio100" for="radio3">
+							Unknown
+							</label>
+						</div>
+					</div>
+					<input type="radio" name="marital" value="single">Single
+					<input type="radio" name="marital" value="divorced">Divorced
+
+					<div class="w-full dis-none js-show-service">
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Education</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="edb4" type="radio" name="education_basic.4y" value=1 checked="checked">
+							<label class="label-radio100" for="radio1">
+								Basic.4y
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="edb6" type="radio" name="education_basic.6y" value=1>
+							<label class="label-radio100" for="radio2">
+								Basic.6y
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="edb9" type="radio" name="education_basic.9y" value=1>
+							<label class="label-radio100" for="radio3">
+							Basic.9y
+							</label>
+						</div>
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="edh" type="radio" name="education_high.school" value=1>
+							<label class="label-radio100" for="radio3">
+							High.school
+							</label>
+						</div>
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="edp" type="radio" name="education_professional.course" value=1>
+							<label class="label-radio100" for="radio3">
+							Professional Course
+							</label>
+						</div>
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="edy" type="radio" name="education_university.degree" value=1>
+							<label class="label-radio100" for="radio3">
+							University Degree
+							</label>
+						</div>
+					</div>
+
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Default Credit</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="defy" type="radio" name="default_yes" value=1 checked="checked">
+							<label class="label-radio100" for="radio1">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="defno" type="radio" name="default_no" value=1>
+							<label class="label-radio100" for="radio2">
+								No
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="defu" type="radio" name="default_unknown" value=1>
+							<label class="label-radio100" for="radio3">
+							Unknown
+							</label>
+						</div>
+					</div>
+
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Housing</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="hy" type="radio" name="housing_yes" value=1 checked="checked">
+							<label class="label-radio100" for="radio1">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="hno" type="radio" name="housing_no" value=1>
+							<label class="label-radio100" for="radio2">
+								No
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="hu" type="radio" name="housing_unknown" value=1>
+							<label class="label-radio100" for="radio3">
+							Unknown
+							</label>
+						</div>
+					</div>
+
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">Loan</span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="ly" type="radio" name="loan_yes" value=1 checked="checked">
+							<label class="label-radio100" for="radio1">
+								Yes
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="lno" type="radio" name="loan_no" value=1>
+							<label class="label-radio100" for="radio2">
+								No
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="lu" type="radio" name="loan_unknown" value=1>
+							<label class="label-radio100" for="radio3">
+							Unknown
+							</label>
+						</div>
+					</div>
+
+
+					<div class="wrap-contact100-form-range">
+						<span class="label-input100">Budget *</span>
+
+						<div class="contact100-form-range-value">
+							$<span id="value-lower">610</span> - $<span id="value-upper">980</span>
+							<input type="text" name="from-value">
+							<input type="text" name="to-value">
+						</div>
+
+						<div class="contact100-form-range-bar">
+							<div id="filter-bar"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
+					<span class="label-input100">Message</span>
+					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+				</div>
+-->
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="../static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/bootstrap/js/popper.js"></script>
+	<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../static/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/noui/nouislider.min.js"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 1500, 3900 ],
+	        connect: true,
+	        range: {
+	            'min': 1500,
+	            'max': 7500
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
